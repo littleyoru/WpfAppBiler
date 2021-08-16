@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://biler.junoeuro.dk/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BilService" />
+  <xs:element name="addBil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BilService" minOccurs="0" name="bil" nillable="true" type="q1:Bil" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addBilResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAlleBils">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAlleBilsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BilService" minOccurs="0" name="getAlleBilsResult" nillable="true" type="q2:ArrayOfBil" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
